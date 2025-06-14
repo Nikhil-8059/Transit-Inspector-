@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Vehicle Number -->
+        <EditText
+            android:id="@+id/et_vehicle_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Number"
+            android:inputType="text"
+            android:maxLength="10"
+            android:importantForAutofill="no"/>
+
+        <!-- Driver Name -->
+        <EditText
+            android:id="@+id/et_driver_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driver Name"
+            android:inputType="textPersonName" />
+
+        <!-- Driver License Number -->
+        <EditText
+            android:id="@+id/et_license_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="License Number"
+            android:inputType="text" />
+
+        <!-- Violation Type -->
+        <Spinner
+            android:id="@+id/spinner_violation_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/violation_type_prompt" />
+
+        <!-- Violation Description -->
+        <EditText
+            android:id="@+id/et_violation_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Violation Description"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- Fine Amount -->
+        <EditText
+            android:id="@+id/et_fine_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fine Amount"
+            android:inputType="numberDecimal" />
+
+        <!-- Vehicle Status -->
+        <Spinner
+            android:id="@+id/spinner_vehicle_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/vehicle_status_prompt" />
+
+        <!-- Location Display (read-only) -->
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: Not Available"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="8dp" />
+
+        <!-- Capture Photo Button -->
+        <Button
+            android:id="@+id/btn_capture_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Photo" />
+
+        <!-- Image Preview (optional) -->
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Violation"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_syncactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sync Data"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Transit Inspector</string>
+
+    <!-- Prompts -->
+    <string name="violation_type_prompt">Select Violation Type</string>
+    <string name="vehicle_status_prompt">Select Vehicle Status</string>
+
+    <!-- Violation Types -->
+    <string-array name="violation_types_array">
+        <item>Speeding</item>
+        <item>No Helmet</item>
+        <item>Drunk Driving</item>
+        <item>No Seatbelt</item>
+        <item>Expired License</item>
+        <item>Vehicle Overload</item>
+        <item>Emission Violation</item>
+    </string-array>
+
+    <!-- Vehicle Status Options -->
+    <string-array name="vehicle_status_array">
+        <item>Seized</item>
+        <item>Released</item>
+        <item>Under Observation</item>
+        <item>Cleared</item>
+    </string-array>
+
+    <!-- Buttons and Actions -->
+    <string name="capture_photo">Capture Photo</string>
+    <string name="submit_violation">Submit Violation</string>
+
+    <!-- Misc -->
+    <string name="location_not_available">Location: Not Available</string>
+    <string name="photo_captured">Photo Captured</string>
+    <string name="saving_violation">Saving Violation...</string>
+    <string name="violation_saved_offline">Violation saved offline</string>
+    <string name="violation_synced">Violation synced successfully</string>
+</resources>
